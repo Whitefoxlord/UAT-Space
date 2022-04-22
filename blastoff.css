@@ -1,0 +1,22 @@
+body {
+    background-image: linear-gradient(to right, rgba(9, 52, 247), rgb(7, 7, 7, 0), rgb(40, 129, 5, 1));
+}
+
+
+button
+{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border-radius: 50px;
+    border-color: chocolate;
+}
+
+
+button:hover {
+    transition-duration: 2s;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+
+}

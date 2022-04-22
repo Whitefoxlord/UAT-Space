@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--Specifies the document type-->
+<html>
+<!--Specifies the language of the html file-->
+    <script src="Login.js">    </script>
+<!--Links the Login java code for future use-->
+    <link href="LoginStyle.css" rel="stylesheet" type="text/css"/>
+<!--Links the CSS file for use of the hmtl-->    
+    <head>
+        <Title>UAT Space Login</Title>
+<!--The title of the page-->
+    </head>
+    <body>
+        <h1> 
+            Welcome to UAT Space.
+<!--First heading of the HTML-->
+        </h1>
+        <br>
+<!--Line Break-->
+        <h2>Please Login using your credentials</h2>
+<!--Second heading displayed below the first heading-->
+        <p id="loginStatus" class="loginID">Status</p>
+<!--Specifies the id of the first paragraph as well as what the paragraph says-->
+        <br>
+<!--Line Break-->
+        <form id="credSubmit" onsubmit="return false">
+<!--Specifies the next lines are a form-->
+            <fieldset style="border: double">
+<!--Creates a border around my form-->
+                <legend>Login Information</legend>
+<!--Creates an overall Legend for the form-->
+            First Name: <input type="text" id="fName"/><br>
+<!--First line of the form| The type of form| id of the first line-->
+            Last Name:  <input type="text" id="lName"/><br>
+<!--Second line of the form| The type of form| id of the Second line-->            
+            ID number:  <input type="number" id="numPart" min="0" max="999"/><br>
+<!--Third line of the form| The type of form| id of the third line| Atributes that are allowed within this form-->
+            <input type="submit" onclick="checkCreds();"/>
+<!--Adds a submit button for use| When clicked uses the checkCreds function-->
+            </fieldset>
+<!--End of the border for the form-->
+        </form>
+<!-- End of the form-->
+    </body>
+</html>
