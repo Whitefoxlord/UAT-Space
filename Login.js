@@ -13,8 +13,8 @@ function checkCreds() {
              document.getElementById("loginStatus").innerHTML = "Invalid login!";
 //If loginInfo is not within parameters the message "Invalid login!" appears
     } 
-    else if (idNUM > 999 || idNUM < 1) {
-//Specifies the idNUM is required to be less than 999 but more than 1
+    else if (idNUM > 999 || idNUM < 100) {
+//Specifies the idNUM is required to be less than 999 but more than 100
         document.getElementById("loginStatus").innerHTML = "Invalid ID Number!";
 //If idNUM is not within parameters the message "Invalid ID Number!" appears
     }
